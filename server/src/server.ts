@@ -14,7 +14,8 @@ const app = express()
 app.use(express.json())
 
 app.use(cors({
-          origin: 'https://my-code-collabs.vercel.app'
+          origin: 'https://localhost:3000',
+	methods:["GET", "POST"],
       }));
 
 
