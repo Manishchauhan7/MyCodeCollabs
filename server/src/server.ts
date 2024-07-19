@@ -13,10 +13,7 @@ const app = express()
 
 app.use(express.json())
 
-app.use(cors({
-          origin: 'https://localhost:3000',
-	methods:["GET", "POST"],
-      }));
+app.use(cors());
 
 
 app.use(express.static(path.join(__dirname, "public"))) // Serve static files
