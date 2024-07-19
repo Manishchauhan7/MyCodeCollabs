@@ -14,10 +14,8 @@ const app = express()
 app.use(express.json())
 
 app.use(cors({
-	origin:"*",
-	
-})
-)
+          origin: 'https://my-code-collabs.vercel.app'
+      }));
 
 
 app.use(express.static(path.join(__dirname, "public"))) // Serve static files
