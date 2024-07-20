@@ -1,3 +1,7 @@
+![Preview-1](https://github.com/Manishchauhan7/sampleimg/blob/main/pre2.png)
+![Preview-2](https://github.com/Manishchauhan7/sampleimg/blob/main/preview2.png)
+
+
 ## 📌CodeCollab Features
 
 -   📌 Real-time collaboration on code editing across multiple files
