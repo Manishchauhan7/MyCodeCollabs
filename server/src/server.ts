@@ -12,13 +12,7 @@ dotenv.config()
 const app = express()
 
 app.use(express.json())
-
-app.use(cors({
-    origin: "*", // Replace with your frontend's URL
-    methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type"],
-    credentials: true
-}));
+app.use(cors())
 
 app.use(express.static(path.join(__dirname, "public"))) // Serve static files
 
@@ -26,14 +20,10 @@ const server = http.createServer(app)
 const io = new Server(server, {
 	cors: {
 		origin: "*",
-		methods: ["GET", "POST"],
-        allowedHeaders: ["Content-Type"],
-        credentials: true
 	},
 	maxHttpBufferSize: 1e8,
 	pingTimeout: 60000,
 })
-
 
 
 let userSocketMap: User[] = []
